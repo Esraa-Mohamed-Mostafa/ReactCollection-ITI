@@ -6,6 +6,7 @@ import NAv from "./components/Navbar";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Details from './components/Shop/Details';
+import Count from './components/Count/Count';
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
       <Route path="/shop" element={<Shop/>} />
       <Route path="/" element={<Home/>} />
       <Route path="/shop/:id" element={<Details/>} />
+      <Route path="/count" element={<Count/>} />
+
+
 
       </Routes>
     </Router>
