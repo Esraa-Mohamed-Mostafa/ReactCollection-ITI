@@ -18,7 +18,8 @@ const NAv = () => {
             <li className=" mx-3 "> <Link  className="text-decoration-none text-white"to="/about"> About</Link></li>
             <li className=" mx-3 "> <Link className="text-decoration-none text-white" to="/shop">Shop</Link></li>
             <li className=" mx-3 "> <Link className="text-decoration-none text-white" to="/count">Counter</Link></li>
-
+            <li className=" mx-3 "> <Link className="text-decoration-none text-white" to="/products">Products</Link></li>
+            
             </ul>
 
           </Navbar.Text>
