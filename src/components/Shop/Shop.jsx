@@ -3,7 +3,7 @@ import { Rate } from 'rsuite';
 import { Link } from "react-router-dom";
 import "./Shop.css";
 import Card from 'react-bootstrap/Card';
-import {    CardGroup,} from 'react-bootstrap';
+import { CardGroup, } from 'react-bootstrap';
 import Spinner from 'react-bootstrap/Spinner';
 
 
@@ -30,12 +30,12 @@ function Shop() {
 
     if (loading) {
         return <>
-        <div class="d-flex justify-content-center align-items-center py-5">
+            <div class="d-flex justify-content-center align-items-center py-5">
 
 
-       <Spinner style={{ color: 'black',width:'8rem',  padding:'4rem' }} animation="border"  role="status">
-            <span className="visually-hidden">Loading...</span>
-        </Spinner> </div></>
+                <Spinner style={{ color: 'black', width: '8rem', padding: '4rem' }} animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner> </div></>
     }
 
 
@@ -47,13 +47,11 @@ function Shop() {
                     <h2 className="py-3 ">
                         Products
                     </h2>
-                    <div className="d-flex flex-wrap">
-                        <CardGroup>
-                            <div className=" card-deck d-flex flex-wrap">
+                    <div className=" card-deck">
+                        <div className=" row">
                             {products.map((product) => {
                                 return (
-                                    <div className="  me-2">
-                                        <Card style={{ width: '13rem' }}>
+                                        <div className=" card me-2" style={{ width: '13rem' }}>
                                             <Card.Img orientation="top" className="card-img-top p-4" src={product.image} />
                                             <Card.Body>
                                                 <h4 >{product.title}</h4>
@@ -64,13 +62,10 @@ function Shop() {
                                                 <span className=" bg-dark p-2 rounded-circle">
                                                     <Link className=" text-decoration-none text-white" to={`/shop/${product.id}`}>Details</Link></span>
                                             </Card.Body>
-                                        </Card>
-                                    </div>
+                                        </div>
                                 )
                             })}
-                            </div>
-                            </CardGroup>
-                    </div>
+                        </div></div>
                 </div></div>
         </>
     );
