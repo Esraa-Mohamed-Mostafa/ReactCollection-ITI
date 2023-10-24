@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Details from './components/Shop/Details';
 import Count from './components/Count/Count';
 import Products from './Hook/Products';
+import Signin from './components/Forms/Signin';
+import Register from './components/Forms/Register';
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
       <Route path="/shop/:id" element={<Details/>} />
       <Route path="/count" element={<Count/>} />
       <Route path="/products" element={<Products/>} />
+      <Route path="/signin" element={<Signin/>} />
+      <Route path="/register" element={<Register/>} />
 
 
 

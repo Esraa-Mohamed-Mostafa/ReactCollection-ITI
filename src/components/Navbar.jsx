@@ -19,7 +19,8 @@ const NAv = () => {
             <li className=" mx-3 "> <Link className="text-decoration-none text-white" to="/shop">Shop</Link></li>
             <li className=" mx-3 "> <Link className="text-decoration-none text-white" to="/count">Counter</Link></li>
             <li className=" mx-3 "> <Link className="text-decoration-none text-white" to="/products">Products</Link></li>
-            
+            <li className=" mx-3 "> <Link className="text-decoration-none text-white" to="/signin">Login</Link></li>
+            <li className=" mx-3 "> <Link className="text-decoration-none text-white" to="/register">Register</Link></li>
             </ul>
 
           </Navbar.Text>
