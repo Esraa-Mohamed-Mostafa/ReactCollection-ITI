@@ -4,7 +4,7 @@ const counterSlice = createSlice({
     initialState: { value: 10 },
     reducers: {
         globalIncrement: (state) => { state.value += 1 },
-        globalDecrement: (state) => { state.value += 1 }
+        globalDecrement: (state) => { state.value -= 1 }
 
     }
 })
